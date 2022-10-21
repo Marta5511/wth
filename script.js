@@ -2,7 +2,7 @@
 jQuery(document).ready(function($){
 
 
-$.get("http://ip-api.com/json/", function(geo, status){
+$.get("https://ip-api.com/json/", function(geo, status){
 let city = geo.city;
 //alert(city)
 $('#txt1').val(city)
@@ -22,7 +22,7 @@ if (city!=null)
 
 function getInfo(city)
 {
-	$.get("http://api.openweathermap.org/data/2.5/find?q="+city+"&type=like&appid=051778c90f1f137c6d0b1e8a9462b105", function(data, status){
+	$.get("https://api.openweathermap.org/data/2.5/find?q="+city+"&type=like&appid=051778c90f1f137c6d0b1e8a9462b105", function(data, status){
 	
 	//alert(JSON.stringify(data.message.like))
 	let city_id = data.list[0].id
