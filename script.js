@@ -1,7 +1,7 @@
 
 jQuery(document).ready(function($){
 
-$(document).ready(function(){
+
 $.get("http://ip-api.com/json/", function(geo, status){
 let city = geo.city;
 //alert(city)
