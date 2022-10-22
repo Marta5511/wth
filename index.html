@@ -17,13 +17,15 @@
  <script type="text/javascript">
  $(document).ready(function(){
 $.get("https://api.ipgeolocation.io/ipgeo?apiKey=6e7e47add9bd42fe911e6707d2f9682c&lang=ru", function(geo, status){
-let city = geo.city;
-//alert(status)
-$('#txt1').val(city)
-if (city!=null)
-{
-	 getInfo(city)
-}
+//let city = geo.city;
+//alert(geo.city)
+	$.get("https://api.openweathermap.org/data/2.5/weather?q="+geo.city+"&units=metric&lang=RU&appid=051778c90f1f137c6d0b1e8a9462b105", function(data_city, status){
+	let city = data_city.name;
+	$('#txt1').val(city)
+	if (city!=null)
+	{
+		 getInfo(city)
+	}
 
   $("button").click(function(){
 	event.preventDefault()
@@ -32,6 +34,7 @@ if (city!=null)
   });
   //});
   //return false;
+})
 })
 
 function getInfo(city)
