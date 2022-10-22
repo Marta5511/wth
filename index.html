@@ -14,10 +14,6 @@
   <body>
  <script type="text/javascript">
  $(document).ready(function(){
- alert(jQuery.fn.jquery);
- });
-
-$(document).ready(function(){
 //$.get("http://ip-api.com/json/", function(geo, status){
 let city ="Минск"// geo.city;
 //alert(status)
@@ -34,10 +30,10 @@ if (city!=null)
   });
   //});
   //return false;
-});
+
 
 function getInfo(city)
-{alert("Вошли в ф-ю, взяли город из поля - "+city)
+{//alert("Вошли в ф-ю, взяли город из поля - "+city)
 	$.get("https://api.openweathermap.org/data/2.5/find?q="+city+"&type=like&appid=051778c90f1f137c6d0b1e8a9462b105", function(data, status){
 	
 	//alert(JSON.stringify(data.message.like))
@@ -158,7 +154,7 @@ function getWeekDay(date)
 		break;
 	}
 }
-
+});
  </script>
  
 	<div class="container-main">
