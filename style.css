@@ -14,7 +14,10 @@ align: center;
 		gap: 1rem;
 		width: 90%	
 	}
-
+	.box-2_1{
+	margin-top: 2rem;
+	
+}
 }
 @media all and (min-width: 1000px){
 .container-main,.container-1,.container-2,.box-2 {
@@ -35,6 +38,10 @@ align: center;
 
 width: calc(100%/2);
 }
+.box-2_1{
+	margin-top: 0rem;
+	
+}
 }
 
 .container-main,.container-1,.container-2,.box-2 {
@@ -43,6 +50,8 @@ width: calc(100%/2);
 		font-family: Century Gothic;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 	.container-main {	
 align: center;
@@ -89,6 +98,7 @@ border-radius: 10px;
 	
 
 	}
+
 .box-2_1,.box-2_2,.box-2_3{
 	
 	}
@@ -99,7 +109,7 @@ margin: 5px;
 	flex-grow:1
 }
 #now{
-	font-size: large;
+	font-size: 55px;
 		
 		color:#000080;
 }
