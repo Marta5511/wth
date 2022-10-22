@@ -29,7 +29,7 @@ if (city!=null)
 
   $("button").click(function(){
 	event.preventDefault()
-	alert("city")
+	
 	getInfo($('#txt1').val())
   });
   //});
@@ -37,7 +37,7 @@ if (city!=null)
 });
 
 function getInfo(city)
-{
+{alert("Вошли в ф-ю, взяли город из поля - "+city)
 	$.get("https://api.openweathermap.org/data/2.5/find?q="+city+"&type=like&appid=051778c90f1f137c6d0b1e8a9462b105", function(data, status){
 	
 	//alert(JSON.stringify(data.message.like))
