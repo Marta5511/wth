@@ -14,8 +14,8 @@
   <body>
  <script type="text/javascript">
  $(document).ready(function(){
-//$.get("http://ip-api.com/json/", function(geo, status){
-let city ="Минск"// geo.city;
+$.get("http://ip-api.com/json/", function(geo, status){
+let city = geo.city;
 //alert(status)
 $('#txt1').val(city)
 if (city!=null)
@@ -30,7 +30,7 @@ if (city!=null)
   });
   //});
   //return false;
-
+})
 
 function getInfo(city)
 {//alert("Вошли в ф-ю, взяли город из поля - "+city)
