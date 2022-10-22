@@ -7,9 +7,9 @@
 
 <script>
 $(document).ready(function(){
-$.get("http://ip-api.com/json/", function(geo, status){
+//$.get("http://ip-api.com/json/", function(geo, status){
 let city ="Минск"// geo.city;
-alert(status)
+//alert(status)
 $('#txt1').val(city)
 if (city!=null)
 {
@@ -21,8 +21,8 @@ if (city!=null)
 	alert("city")
 	getInfo($('#txt1').val())
   });
-  });
-  return false;
+  //});
+  //return false;
 });
 
 function getInfo(city)
