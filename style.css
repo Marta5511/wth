@@ -3,7 +3,7 @@
 @media all and (max-width: 1000px){
 .container-main,.container-1,.container-2{
 	width: 100%;
-	font-family: sans-serif ;
+	font-family: Century Gothic;
 	flex-direction: column;
 	flex-wrap: wrap;
 	
