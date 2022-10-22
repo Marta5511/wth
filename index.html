@@ -5,9 +5,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-6e7e47add9bd42fe911e6707d2f9682c
 
-https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY&ip=1.1.1.1&lang=cn
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,8 +16,8 @@ https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY&ip=1.1.1.1&lang=cn
   <body>
  <script type="text/javascript">
  $(document).ready(function(){
-//$.get("http://ip-api.com/json/", function(geo, status){
-let city = "Минск"//geo.city;
+$.get("https://api.ipgeolocation.io/ipgeo?apiKey=6e7e47add9bd42fe911e6707d2f9682c&lang=ru", function(geo, status){
+let city = geo.city;
 //alert(status)
 $('#txt1').val(city)
 if (city!=null)
@@ -34,7 +32,7 @@ if (city!=null)
   });
   //});
   //return false;
-//})
+})
 
 function getInfo(city)
 {//alert("Вошли в ф-ю, взяли город из поля - "+city)
